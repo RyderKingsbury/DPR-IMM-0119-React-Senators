@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+// import './index.css';
+// import App from '
+import SenatorsController from './components/SenatorsController'
 import * as serviceWorker from './serviceWorker';
+
+const welcomeMessage = 'Hello, World!'
+const App = () => (
+    <div>
+        <h1>{welcomeMessage}</h1>
+        <SenatorsController/>
+    </div>
+)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
